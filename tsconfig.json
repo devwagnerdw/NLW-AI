@@ -18,7 +18,12 @@
     "strict": true,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true
+    "noFallthroughCasesInSwitch": true,
+    /* paths   */
+    "baseUrl": ".",
+    "paths": {
+    "@/*": ["./src/*"]  // Crie um alias para importar módulos de dentro do diretório './src/' usando '@/'
+}
   },
   "include": ["src"],
   "references": [{ "path": "./tsconfig.node.json" }]
